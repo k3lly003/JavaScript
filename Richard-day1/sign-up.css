@@ -1,0 +1,36 @@
+* {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.sign-up {
+  /* border: 1px solid green; */
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+.header2 {
+  /* border: 1px solid red; */
+  font-size: 15px;
+  margin-left: 50px;
+}
+button {
+  margin: 20px 0 0 0;
+  gap: 0px;
+  border-radius: 5px;
+  border: 0;
+  background-color: green;
+  color: #fff;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.all {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  background-color: bisque;
+}
