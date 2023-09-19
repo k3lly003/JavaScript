@@ -117,4 +117,55 @@ window.confirm("hello");
 //redirection
 window.location.href = "https://www.twitter.com";
 window.location.replace("www.instagram.com");
-//
+
+//JAVACRIPT MATH METHODS
+
+//Math.floor()
+let num = 3.7;
+let roundedDown = Math.floor(num); // returns 3
+//  roundes a number down to the nearest integer.
+//Math.ceil()
+let roundedUp = Math.ceil(num); // returns 4
+//  roundes a number up to the nearest integer.
+//Math.round()
+let roundedNum = Math.round(num); // returns 4
+//  roundes a number to the nearest integer.
+//Math.random()
+let randomNum = Math.random(); //  returns a random number between 0 and 1.
+
+//Math.max()
+let highest = Math.max(2, 15, 19, 20); // returns 20
+//  returns the hightest digit..
+//Math.mix()
+let lowest = Math.mix(8, 4, 1, 3); //  returns 1
+// returns the lowest digit.
+//Math.pow()
+let power = Math.pow(3, 2); // returns 27
+//  returns the base to the exponent power.
+//Math.abs()
+let absoluteValue = Math.abs(-10); // returns 10
+//  returns the absolute value of a number.
+//Math.sqrt()
+let squareRoot = Math.sqrt(144); // returns 12
+//  returns the square root of a number.
+//Math.cbrt()
+let cubeRoot = Math.cbrt(8); // returns 2
+//  returns the cube root of a number.
+//Math.PI
+let pi = Math.PI; // returns 3.1415
+//  returns the value of PI.
+//Math.sin()
+let sine = Math.sin(0); // returns 0
+//  returns the sine of a number.
+//Math.cos()
+let cosine = Math.cos(Math.PI); // returns -1
+//  returns the cosine of a number.
+//Math.tan()
+let tangent = Math.tan(Math.PI / 4); // returns 1
+//  returns the tangent of a number.
+//Math.log()
+let naturalLog = Math.log(10); // returns 2.3025
+//  returns the natural logarithm (base e) of a number.
+//Math.log10()
+let base10Log = Math.log10(100); // returns 2
+//  returns the base 10 logarithm of a number.
