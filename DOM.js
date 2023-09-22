@@ -29,3 +29,15 @@ elem.setAttribute("title", "new title"); // set attribute with new value
 elem.hasAttribute("title"); // is attribute on element true / false
 
 elem.removeAttribute("title"); // removes attribute from element
+
+//Creating / Appending elements
+document.createElement("name"); // create element node
+
+document.createTextNode("text"); // create element node
+
+document.appendChild("child"); // append child for elem
+// child can be any element(div, p ...)
+
+document.removeChild("child"); // remove Child for elem
+
+document.replaceChild("newChild", "oldChild"); // replace child with a new one
