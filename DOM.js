@@ -41,3 +41,26 @@ document.appendChild("child"); // append child for elem
 document.removeChild("child"); // remove Child for elem
 
 document.replaceChild("newChild", "oldChild"); // replace child with a new one
+
+//accessing parent, children, siblings
+
+elem.children;
+elem.childNode; // accessing element children
+
+elem.firstChildElement;
+elem.firstChild; // get first child
+
+elem.lastChildElement;
+elem.lastChild; // get last child
+
+child.parentNode; // get parent
+
+child.previousSibling; // previous sibling
+
+child.nextSibling; //get next sibling
+
+//node info
+
+child.nodeName;
+child.nodeType;
+child.nodeValue;
