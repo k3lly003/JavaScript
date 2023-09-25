@@ -64,3 +64,14 @@ child.nextSibling; //get next sibling
 child.nodeName;
 child.nodeType;
 child.nodeValue;
+
+//Mmodifying element classes
+elem.classList; // access classes as a list
+
+elem.classList.add("my-class"); // add class
+
+elem.classList.remove("my-class"); // remove class
+
+elem.classList.toogle("my-class"); // add/remove class if present
+
+elem.classList.contains("my-class"); // is class applied to element? true/false
