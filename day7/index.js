@@ -41,7 +41,7 @@ if (big % 2 == 0) {
 
 //
 function all(a) {
-  //He we din't asign "a" 2 something bcz if u do so u asign the value of d called valuable 2 that.
+  //Here we din't assign "a" 2 something bcz if u do so u assign the value of d called valuable 2 that.
   let total = a.length;
   if (total % 2 == 0) {
     console.log("even");
