@@ -31,3 +31,19 @@ date.getMilliSeconds(); // 65
 date.getTime(); // 1682455363
 
 date.getTimezoneOffset(); //-120
+
+//Conversions
+
+//Tue Apr 25 2023 21:27:35 GMT+0200
+date.toString(); // 21:27:23   GMT+0200
+
+date.toDateString(); // Tue Apr 25 2023   GMT+0200
+
+//2023-04-25T19:27:35.363Z
+date.toIDOSString();
+
+date.toLocaleString(); // 9:27:35 PM
+
+date.toLocaleTimeString(); // 9:27:35 PM
+
+date.getTime(); // 1682450855363
