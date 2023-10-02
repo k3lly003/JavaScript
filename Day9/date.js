@@ -47,3 +47,20 @@ date.toLocaleString(); // 9:27:35 PM
 date.toLocaleTimeString(); // 9:27:35 PM
 
 date.getTime(); // 1682450855363
+
+//Set Methods
+date.setFullYear(2023); // sets Year
+
+date.setMonth(11); // sets Month
+
+date.setDate(1); // sets date
+
+date.setHours(20); // sets hour
+
+date.setSeconds(20); // sets seconds
+
+date.setMilliseconds(20); // sets ms
+
+//number of ms from Jan 1st 1970
+
+date.setTime(1681051613351);
