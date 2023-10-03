@@ -2,9 +2,8 @@
 let favLanguage = 3;
 let LangName;
 
-switch (
-  favLanguage // favLanguage is EXPRESSION
-) {
+// favLanguage is EXPRESSION
+switch (favLanguage) {
   case 1:
     LangName = "Java";
     break;
