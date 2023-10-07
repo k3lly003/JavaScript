@@ -23,3 +23,31 @@ const obj = {
 const { banana, ...rest } = obj;
 
 console.log(rest);
+
+// Destructuring can also work on Nested obj
+
+const object = {
+  banana: "🍌",
+  bugger: "🍔",
+  pizza: "🍕",
+  parent: {
+    child: "👶",
+  },
+};
+const {
+  parent: { child },
+} = object;
+
+console.log(child);
+
+//U can ignore Values
+
+const cars = {
+  van: "🚐",
+  truck: "🚛",
+  bus: "🚎",
+  ambulance: "🚑",
+};
+const [, , , ambulance] = car;
+
+console.log(car);
