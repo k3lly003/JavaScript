@@ -1,13 +1,27 @@
-// setting timer
+/* setting timer
+
+The setTimeOut() function is used to execute a function or evaluate an expression after a specified delay (in milliseconds)
+Synthax:
+
+setTimeout(function, delay, arg1, arg2, ...)
+.function: the function or expression to be executed.
+.delay: the delay in ms before the function is executed.
+.arg1,arg2: Optional argument to be passed to the function.
+
+function greet(){console.log("hello")} setTimeOut(greet, 2000)
+
+*/
 setTimeout(() => {
   // window.location.href="https://www.facebook.com";
   console.log("https://www.youtube.com");
 }, 5000);
+
 // to set infinite time
 setInterval(() => {
   window.alert("heeeey");
   5000;
 }, 4000);
+
 //to clean timeseter
 const big = setTimeout(() => {
   console.log("https://www.youtube.com");

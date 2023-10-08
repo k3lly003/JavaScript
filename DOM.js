@@ -65,7 +65,7 @@ child.nodeName;
 child.nodeType;
 child.nodeValue;
 
-//Mmodifying element classes
+//Modifying element classes
 elem.classList; // access classes as a list
 
 elem.classList.add("my-class"); // add class
