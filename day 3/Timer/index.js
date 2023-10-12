@@ -25,7 +25,25 @@ setTimeout(() => {
   console.log("https://www.youtube.com");
 }, 5000);
 
-// to set infinite time
+/* TO SET INFINITE TIME*/
+/*The setInterval() is used to repeatedly execute a function or evaluate an expresion at a specified interval in ms*/
+/*syntax 1: setInterval(() => {
+  
+}, interval); */
+/*syntax 2:
+setInterval(func, delay, arg1, arg2,...)
+funct: the function or expression to be executed.
+delay: the interval in ms.
+arg1, arg2, ... :optional arguments to be passed to be function.
+*/
+/*Exercise 1*/
+let count = 0;
+function increment() {
+  count++;
+  console.log(count);
+}
+setInterval(increment, 1000);
+/*Exercise 2*/
 setInterval(() => {
   window.alert("heeeey");
   5000;
