@@ -42,10 +42,18 @@ function leti() {
   }
 }
 let sellerOutPut = setTimeout(leti, 5000);
-/*Cloning/copying an object with { ...objName })*/
+/*Cloning/copying an object with '{ ...objName }' and 'Object.assign({}, objName)'*/
 var car = {
   name: "benz",
   mode: "aws",
 };
-const carCopy = { ...car };
+const carCopy = { ...car }; /*{ ...objName }*/
+const carCopy2 = Object.assign({}, car); /*Object.assign({}, objName)*/
 console.log(carCopy);
+console.log(carCopy2);
+/*Geting object values using Object.values(objName)*/
+const vehicle = {
+  make: "Toyota",
+  model: "camry",
+};
+console.log(Object.values(vehicle));
