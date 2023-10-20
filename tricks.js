@@ -41,7 +41,7 @@ function leti() {
     console.log("Bro u broke 😂");
   }
 }
-let sellerOutPut = setTimeout(leti, 5000);
+let sellerOutPut = setTimeout(leti, 600);
 /*Cloning/copying an object with '{ ...objName }' and 'Object.assign({}, objName)'*/
 var car = {
   name: "benz",
@@ -57,3 +57,18 @@ const vehicle = {
   model: "camry",
 };
 console.log(Object.values(vehicle));
+/*example of Function and object as the first class citizens
+FCC(first class citizens): you can assign them to a valiable, pass as argument, return from other function
+*/
+function sayHello() {
+  return "hello world";
+}
+let grettings = sayHello; /*Assign to a valiable*/
+console.log(grettings); /*Passing them as parameter*/
+/*Return from other functions*/
+var obj3 = {
+  nana: "12 years",
+  keke: "5 years",
+};
+let age = obj3; /*Assign to a valiable*/
+console.log(age); /*Passing them as parameter*/
