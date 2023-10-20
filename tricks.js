@@ -42,3 +42,10 @@ function leti() {
   }
 }
 let sellerOutPut = setTimeout(leti, 5000);
+/*Cloning/copying an object with { ...objName })*/
+var car = {
+  name: "benz",
+  mode: "aws",
+};
+const carCopy = { ...car };
+console.log(carCopy);
