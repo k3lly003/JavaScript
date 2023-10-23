@@ -64,7 +64,7 @@ function sayHello() {
   return "hello world";
 }
 let grettings = sayHello; /*Assign to a valiable*/
-console.log(grettings); /*Passing them as parameter*/
+console.log(grettings); /*Passing them as argument*/
 /*Return from other functions*/
 var obj3 = {
   nana: "12 years",
