@@ -72,3 +72,18 @@ var obj3 = {
 };
 let age = obj3; /*Assign to a valiable*/
 console.log(age); /*Passing them as parameter*/
+
+/*Object can store functions as properties,these function
+are typically called methods when associated with Objects.*/
+/*Within an object method, this refers to the object that the
+method belongs to.However, the value of This can change depending
+ on the context in which a function is called*/
+const pipo = {
+  name:'Yohana',
+  greet: function(){
+    console.log('Hello' + this.name + '!')
+  }
+  pipo.greet(); // Hello Yohana!
+}
+
+
