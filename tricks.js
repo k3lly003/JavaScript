@@ -86,4 +86,8 @@ const pipo = {
   pipo.greet(); // Hello Yohana!
 }
 
-
+let insta={ click}
+let fb = {
+  on
+}
+let both ={...insta, ...fb}
