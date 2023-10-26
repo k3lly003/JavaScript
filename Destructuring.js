@@ -12,3 +12,11 @@ const [firstColor, secondColor] = colors;
 /*Output*/
 console.log(firstColor);
 console.log(secondColor);
+
+/*OBJECT DESTRUCTURING*/
+/*Object destructuring allows you to extract properties from objects*/
+let person = { surName: "John Doe", age: 34 };
+const { surName, age } = person;
+/*Output*/
+console.log(surName);
+console.log(age);
