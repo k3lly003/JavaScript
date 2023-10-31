@@ -20,3 +20,17 @@ const { surName, age } = person;
 /*Output*/
 console.log(surName);
 console.log(age);
+/*For objects with nested structure, you can desturcture in aa layered manner*/
+const student = {
+  nam: "code",
+  scores: {
+    math: 90,
+    science: 85,
+  },
+};
+const {
+  nam,
+  scores: { math },
+} = student;
+console.log(nam);
+console.log(math);
