@@ -34,3 +34,9 @@ const {
 } = student;
 console.log(nam);
 console.log(math);
+/*Function parameter destructuring*/
+/*This Especially userful when working with function parameters*/
+function introduce({ nam }) {
+  console.log(`My name is ${nam}`);
+}
+introduction(profile); //My name is code
