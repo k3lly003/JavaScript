@@ -17,4 +17,3 @@ forma.addEventListener("submit", (event) => {
   }
   form.reset();
 });
-//validation
