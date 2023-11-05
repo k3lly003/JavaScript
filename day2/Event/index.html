@@ -7,39 +7,59 @@
     <title>Day 2</title>
   </head>
   <body>
-    <button id="save">Save</button><br />
     <form id="form">
       <input type="text" name="brice" /><br />
       <input type="password" name="ok" /><br />
+      <button id="save">Save</button><br />
     </form>
     <!-- More Events -->
     <!-- when user click -->
-    <input type="text" onclick="" />
+    <label for="click">Click</label><br />
+    <input type="text" onclick="" /><br />
     <!-- when user double Clicks  -->
-    <input type="text" ondblclick="" />
+    <label for="double click">Double Click</label><br />
+    <input type="text" ondblclick="" /><br />
     <!-- when user moves the moves the mouse over an element -->
-    <input type="text" onmouseover="" />
+    <label for="mouseover">Mouse Over</label><br />
+    <input type="text" onmouseover="" /><br />
     <!-- when user moves the moves the mouse below or down an element -->
-    <input type="text" onmousedown="" />
+    <label for="mousedown">Mouse Down</label><br />
+    <input type="text" onmousedown="" /><br />
     <!-- when an element loses focus -->
-    <input type="text" onblur="" />
+    <label for="focusout">Focus Out</label><br />
+    <input type="text" onblur="" /><br />
     <!-- when an element gets focus -->
-    <input type="text" onfocus="" />
+    <label for="focusin">Focus In</label><br />
+    <input type="text" onfocus="" /><br />
     <!-- when there is a change -->
-    <input type="text" onchange="" />
+    <label for="change">Change</label><br />
+    <input type="text" onchange="" /><br />
     <!-- when the user press a key -->
-    <input type="text" onkeydown="" />
+    <label for="keypress">Key Press</label><br />
+    <input type="text" onkeydown="" /><br />
     <!-- when the user release a key -->
-    <input type="text" onkeyup="" />
+    <label for="keyup">Key Up</label><br />
+    <input type="text" onkeyup="" /><br />
     <!-- when the user press and hold a key -->
-    <input type="text" onkeypress="" />
+    <label for="keydown">Key Down</label><br />
+    <input type="text" onkeypress="" /><br />
     <!-- when user submit a form -->
+    <label for="submit">Submit Form</label><br /><br />
     <form onsubmit=""></form>
+    <br />
     <!-- when a user resets a form -->
+    <label for="reset">Reset Form</label><br />
     <form onreset=""></form>
+    <br />
     <!-- when a user clicks outside of input box -->
 
     <!-- when a user selects a text -->
+    <label for="select">Select Text</label>
+    <ul>
+      <li><span class="spn1">first text</span></li>
+      <li><span class="spn2">second text</span></li>
+      <li><span class="spn3">third text</span></li>
+    </ul>
     <input type="text" onselect="" />
     <script src="./events.js"></script>
   </body>
