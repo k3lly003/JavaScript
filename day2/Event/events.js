@@ -1,19 +1,19 @@
 const save = document.getElementById("save");
+const forma = document.getElementById("form");
 save.addEventListener("click", () => {
-  window.alert("successfully sent");
+  forma.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let text = forma.brice.value;
+    let password = forma.ok.value;
+    if ((text == "") & (password == "")) {
+      confirm("Please insert your credentials");
+    } else {
+      window.alert(text);
+      window.alert(password);
+      forma.reset();
+    }
+  });
 });
 save.addEventListener("dblclick", () => {
   console.log("hello double click");
-});
-const forma = document.getElementById("form");
-forma.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let text = forma.brice.value;
-  let password = forma.ok.value;
-  window.alert(text);
-  window.alert(password);
-  if (text == "") {
-    confirm("your pass please");
-  }
-  form.reset();
 });

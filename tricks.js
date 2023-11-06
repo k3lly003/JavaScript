@@ -11,14 +11,14 @@ let a = [1, 5, 42, 56, 77];
 
 let solution = a.sort((a, b) => b - a);
 console.log(solution);
-Map.set()
-const fruits =new.Map([
+Map.set();
+/*const fruits =new.Map([
   ['🍉', 100],
   ['🍌', 50],
   ['🥭',250],
   ['🍏',apple],
   ['🍋',lemon],
-])
+]);*/
 const wallet = {
   Balance: 5000,
 };
@@ -84,7 +84,7 @@ const pipo = {
     console.log("Hello" + this.name + "!");
   },
 };
-pipo.greet();  // Hello Yohana!
+pipo.greet(); // Hello Yohana!
 
 let insta = { click };
 let fb = {
@@ -100,9 +100,17 @@ var threeDim = [[[]]];
 /*If we explicity return  something inside the function, then the THIS binding will be ignored and
 and an empty object will be assigned to the caller variable*/
 
-function developer(salary, role){
+function developer(salary, role) {
   this.salary = salary; // this refers to newly created object here
   this.role = role;
 }
-var employee = new developer('$450,000', 'SeniorWebDev');
+var employee = new developer("$450,000", "SeniorWebDev");
 console.log(employee.salary); //$450,000
+
+/*Using Default parameter*/
+/*Default parameters allow you to set default values for function parameters if none are provided.
+This avoid repeating yourself by redefining values every time */
+function hi(name = "Bob") {
+  console.log(`Hello ${name}`);
+}
+console.log(hi());
