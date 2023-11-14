@@ -114,3 +114,28 @@ function hi(name = "Bob") {
   console.log(`Hello ${name}`);
 }
 console.log(hi());
+//
+let customFunc = (a, b, c, d, e) => {
+  return a + b;
+};
+customFunc(1, 2, 3, 4, 5);
+
+customFunc = (a, b, ...args) => {
+  return a + b;
+};
+
+// let customFunc = (a, b, ...args) => {
+//   return ...args;
+// };
+
+// console.log(customFunc(1, 2, 3, 4, 5));
+
+customFunc(1, 2, 3, 4, 5);
+/*UNESCAPE & ESCAPE*/
+/*The Escape() function is responsible for coding a string so as to make the transfer of the information
+from one computer to the other, across a network.*/
+document.write(escape("Hello! I am Brice")); //output : Hello%21%21%20I%20qm%20Brice
+
+/*The Unescape() function is very important as it decodes the coded string.
+It works in the following way*/
+document.write(unescape("Hello%21%20I%20am%20Brice"));
