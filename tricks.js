@@ -139,3 +139,26 @@ document.write(escape("Hello! I am Brice")); //output : Hello%21%21%20I%20qm%20B
 /*The Unescape() function is very important as it decodes the coded string.
 It works in the following way*/
 document.write(unescape("Hello%21%20I%20am%20Brice"));
+/*Function Chaining*/
+/*is a pattern in JavaScript where multiple func are called on the same
+object consecutively,using the same object reference, multiple functions can be invoked*/
+/*Object Method*/
+const person = {
+  sleep: function () {
+    console.log("is sleeping");
+    return this;
+  },
+  wakeUp: function () {
+    console.log("woke up");
+    return this;
+  },
+  eat: function () {
+    console.log("is eating");
+    return this;
+  },
+  study: function () {
+    console.log("is studing");
+    return this;
+  },
+};
+person.sleep().eat().wakeUp().study();
