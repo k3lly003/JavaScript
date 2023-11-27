@@ -13,7 +13,7 @@ Prototype-based languages like JS
 they are 4 rules or main pillars of OOP language, this define how data and actions
 associated with the data are organized using code.
 */
-//-inheritance: allows classes to inherit common properties from the parent class.
+//inheritance: allows classes to inherit common properties from the parent class.
 /*Parent*/
 function Animal(name, age) {
   this.name = name;
@@ -36,5 +36,9 @@ const myDog = new Dog("Buddy", 5, "Labrador");
 myDog.eat(); // output: "Buddy is eating"
 myDog.bark(); // output: "Buddy is barking."
 //-polymorphism: is the ability to exist in many forms.
+//it means you can use one type to represent different things
+
+//it means you can use one type of variable to refer to an instance of any subtype.
+
 //-encapsulation: means it binds data and code together into one unit.
-//-abstraction: dispalying only the important information by hiding the implementation part.
+//-abstraction: dispalying only the important information by hiding the implementation part(is the process of hiding the complexity of something.)

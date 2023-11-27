@@ -16,3 +16,14 @@ const Age = !!input.value;
 
 console.log("Using Boolean():", age); // Output: true or false
 console.log("Using !! operator:", Age); // Output: true or false
+/*Nullish Coalescing*/
+/*Returning its right-hand side when its left hand side operand is null or undefined*/
+/*OLD*/
+const addIdentity = (user, id) => {
+  user.id = id !== null && id !== undefined ? id : "Unknown";
+};
+
+const addId = (user, id) => {
+  user.id = id ?? "Unknown";
+  return user;
+};
