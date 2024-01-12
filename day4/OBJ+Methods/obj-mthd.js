@@ -176,3 +176,15 @@ console.log(jap);
 let kap = wap + rap;
 kap = zap + jap;
 console.log(kap);
+
+// Adding to an object
+let person = {
+  "name": "natasha",
+  "age": "20"
+}
+
+person.isSingle = "no";
+
+console.log(person);
+
+// 

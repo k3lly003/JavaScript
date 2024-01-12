@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <!-- 
+        Create a simple calculator with two input fields and four buttons 
+        (add, subtract, multiply, divide). When a button is clicked, prompt the user
+         for two numbers, perform the corresponding operation, and display the result. 
+        
+        -->
+    <input type="number" id="num1" placeholder="Enter number 1" />
+    <input type="number" id="num2" placeholder="Enter number 2" />
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <script>
+      function add() {
+        let num1 = parseFloat(prompt("Enter number 1:"));
+        let num2 = parseFloat(prompt("Enter number 2:"));
+        alert(`Result: ${num1 + num2}`);
+      }
+
+      function subtract() {
+        let num1 = parseFloat(prompt("Enter number 1:"));
+        let num2 = parseFloat(prompt("Enter number 2:"));
+        alert(`Result: ${num1 - num2}`);
+      }
+
+      function multiply() {
+        let num1 = parseFloat(prompt("Enter number 1:"));
+        let num2 = parseFloat(prompt("Enter number 2:"));
+        alert(`Result: ${num1 * num2}`);
+      }
+
+      function divide() {
+        let num1 = parseFloat(prompt("Enter number 1:"));
+        let num2 = parseFloat(prompt("Enter number 2:"));
+        alert(`Result: ${num1 / num2}`);
+      }
+    </script>
+  </body>
+</html>

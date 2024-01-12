@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+  </head>
+  <body>
+    <!-- 
+        Create a simple to-do list where users can add tasks, mark tasks as completed, and view the list of tasks.
+     -->
+    <input type="text" id="taskInput" placeholder="Enter task" />
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="viewTasks()">View Tasks</button>
+
+    <script>
+      let tasks = [];
+
+      function addTask() {
+        let task = prompt("Enter task:");
+        tasks.push(task);
+      }
+
+      function viewTasks() {
+        alert(`Tasks:\n${tasks.join("\n")}`);
+        /*
+        In this code, the viewTasks function displays an alert with a message that includes the tasks joined 
+        with line breaks. 
+        The backticks () are used for template literals to embed the variable tasks` in the string.
+        */
+      }
+    </script>
+  </body>
+</html>

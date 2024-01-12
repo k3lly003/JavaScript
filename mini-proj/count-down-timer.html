@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <!-- 
+        Create a countdown timer that starts from a specified number of seconds and updates every second.
+         Display an alert when the countdown reaches zero.
+     -->
+    <button onclick="startTimer()">Start Countdown</button>
+
+    <script>
+      function startTimer() {
+        let seconds = parseInt(
+          prompt("Enter the countdown duration in seconds:")
+        );
+
+        if (isNaN(seconds) || seconds <= 0) {
+          alert("Invalid input. Please enter a positive number.");
+          return;
+        }
+
+        const timer = setInterval(function () {
+          console.log(seconds);
+          if (seconds === 0) {
+            clearInterval(timer);
+            alert("Countdown reached zero!");
+          } else {
+            seconds--;
+          }
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

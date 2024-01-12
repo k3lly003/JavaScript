@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <!-- 
+        Create a simple number guessing game. Generate a random number between 1 and 100. 
+        Prompt the user to guess the number.
+         Provide feedback if the guessed number is too high, too low, or correct. 
+         Keep track of the number of attempts.
+     -->
+
+    <button onclick="startGame()">Start Game</button>
+
+    <script>
+      function startGame() {
+        const secretNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        while (true) {
+          let guess = parseInt(prompt("Guess the number (1-100):"));
+
+          if (isNaN(guess)) {
+            alert("Invalid input. Please enter a number.");
+            continue;
+          }
+
+          attempts++;
+
+          if (guess === secretNumber) {
+            alert(
+              `Congratulations! You guessed the number in ${attempts} attempts.`
+            );
+            break;
+          } else if (guess < secretNumber) {
+            alert("Too low. Try again.");
+          } else {
+            alert("Too high. Try again.");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
