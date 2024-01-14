@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Timer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #timer {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Timer</h1>
+    <div id="timer">00:00</div>
+    <button id="startButton">Start</button>
+    <button id="stopButton" disabled>Stop</button>
+
+    <script>
+      let timerInterval;
+      let startTime;
+      let elapsedTime = 0;
+
+      function startTimer() {
+        startTime = Date.now() - elapsedTime;
+        timerInterval = setInterval(function () {
+          const elapsedTime = Date.now() - startTime;
+          updateTimer(elapsedTime);
+        }, 1000);
+        document.getElementById("startButton").disabled = true;
+        document.getElementById("stopButton").disabled = false;
+      }
+
+      function stopTimer() {
+        clearInterval(timerInterval);
+        document.getElementById("startButton").disabled = false;
+        document.getElementById("stopButton").disabled = true;
+      }
+
+      function updateTimer(elapsedTime) {
+        const hours = Math.floor(elapsedTime / 3600000);
+        const minutes = Math.floor((elapsedTime % 3600000) / 60000);
+        const seconds = Math.floor((elapsedTime % 60000) / 1000);
+        document.getElementById("timer").textContent =
+          pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+      }
+
+      function pad(number) {
+        return number.toString().padStart(2, "0");
+      }
+
+      document
+        .getElementById("startButton")
+        .addEventListener("click", startTimer);
+      document
+        .getElementById("stopButton")
+        .addEventListener("click", stopTimer);
+    </script>
+  </body>
+</html>
