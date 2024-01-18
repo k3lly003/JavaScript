@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #f2f2f2; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.blog-container {
+  /* border: 1px solid red; */
+  width: 50%;
+  overflow: hidden;
+  background: white;
+  white-space: nowrap;
+}
+
+.blog-container :hover .blogs {
+  animation-play-state: paused;
+}
+
+.blogs {
+  /* border: 1px solid green; */
+  display: flex;
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+
+.blogs img {
+  height: 50px;
+  margin: 0 40px;
+}
